@@ -1,0 +1,34 @@
+#World where armor weight is enabled
+Worlds:
+  - 'world'
+  - 'world_nether'
+  - 'world_the_end'
+
+#Whole armor weight is weighted sum of materials and Armor parts
+#for example (if default values are loaded) values full set of golden armor is:
+#3x5+3x8+3x7+3x4 = 72
+#material weights
+Material-Weight:
+  netherite: 5
+  diamond: 4
+  leather: 1
+  chain: 2
+  iron: 3
+  gold: 3
+#Armor part multiplayer of materials
+ArmorPart-Weight:
+  helmet: 5
+  chestplate: 8
+  leggings: 7
+  boots: 4
+#weight steps for effect of slowness
+#if its gold set for default ArmorPart and Materia values
+#total weight is equal 72
+#its more then 49 and less then 73 so its slow2
+SlowSteps:
+  slow1: 25
+  slow2: 49
+  slow3: 73
+  slow4: 97
+  slow5: 121
+  slow6: 145
